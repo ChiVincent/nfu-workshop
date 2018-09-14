@@ -3,9 +3,8 @@
 namespace Tests\Feature\Auth;
 
 use Carbon\Carbon;
-use NFUWorkshop\User;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
+use NFUWorkshop\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ResetPasswordTest extends TestCase

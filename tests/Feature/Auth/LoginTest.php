@@ -2,9 +2,8 @@
 
 namespace Tests\Feature\Auth;
 
-use NFUWorkshop\User;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
+use NFUWorkshop\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class LoginTest extends TestCase

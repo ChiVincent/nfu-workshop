@@ -2,12 +2,10 @@
 
 namespace Tests\Feature\Auth;
 
-use Illuminate\Auth\Notifications\ResetPassword;
-use Illuminate\Support\Facades\Notification;
-use Illuminate\Support\Facades\Queue;
-use NFUWorkshop\User;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
+use NFUWorkshop\User;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ForgotPasswordTest extends TestCase

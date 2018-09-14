@@ -3,9 +3,9 @@
 namespace NFUWorkshop\Http\Controllers\Auth;
 
 use NFUWorkshop\User;
-use NFUWorkshop\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use NFUWorkshop\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
