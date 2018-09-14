@@ -2,6 +2,7 @@
 
 namespace NFUWorkshop\Notifications;
 
+use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -30,6 +31,7 @@ class Newsletter extends Notification implements ShouldQueue
     {
         return (new MailMessage)
                     ->line('安安，這是一份電子報')
-                    ->line('但它並沒有什麼卵用');
+                    ->line('但它並沒有什麼卵用')
+                    ->line('寄送時間：' . Carbon::now()->toDateTimeString());
     }
 }
