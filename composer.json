@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "chivincent/nfu-workshop",
+    "description": "The demo for nfu laravel deploy workshop.",
+    "keywords": ["nfu", "deploy", "workshop", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
