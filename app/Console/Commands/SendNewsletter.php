@@ -2,9 +2,9 @@
 
 namespace NFUWorkshop\Console\Commands;
 
+use NFUWorkshop\User;
 use Illuminate\Console\Command;
 use NFUWorkshop\Notifications\Newsletter;
-use NFUWorkshop\User;
 
 class SendNewsletter extends Command
 {
