@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace NFUWorkshop\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 

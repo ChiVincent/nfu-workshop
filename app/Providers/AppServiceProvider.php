@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace NFUWorkshop\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

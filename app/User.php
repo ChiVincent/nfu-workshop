@@ -1,12 +1,12 @@
 <?php
 
-namespace App;
+namespace NFUWorkshop;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
- * App\User
+ * NFUWorkshop\User
  *
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property string $email
@@ -17,14 +17,14 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @property string|null $remember_token
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
- * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereEmail($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereEmailVerifiedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\User wherePassword($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereRememberToken($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\User whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereEmailVerifiedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User wherePassword($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereRememberToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class User extends Authenticatable
