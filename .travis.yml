@@ -1,0 +1,27 @@
+language: php
+
+dist: trusty
+
+php:
+  - '7.1'
+  - '7.2'
+  - nightly
+
+sudo: required
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+addons:
+  mariadb: '10.3'
+
+before_install:
+  - mysql --version
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
+
+before_script:
+  - composer install --no-interaction --prefer-dist --no-suggest --verbose
+
+script:
+  - php vendor/bin/phpunit --coverage-text
