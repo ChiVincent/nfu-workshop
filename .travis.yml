@@ -22,6 +22,8 @@ before_install:
 
 before_script:
   - composer install --no-interaction --prefer-dist --no-suggest --verbose
+  - cp .env.testing .env
+  - php artisan key:generate
 
 script:
   - php vendor/bin/phpunit --coverage-text
