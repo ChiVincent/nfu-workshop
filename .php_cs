@@ -1,0 +1,21 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->exclude([
+        'vendor',
+        'node_modules',
+        'storage',
+        'bootstrap/cache',
+    ])
+    ->notPath('_ide_helper.php')
+    ->in(__DIR__);
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@PSR2' => true,
+        'no_unused_imports' => true,
+        'ordered_imports' => ['sortAlgorithm' => 'length'],
+        'array_syntax' => ['syntax' => 'short'],
+    ])
+    ->setUsingCache(false)
+    ->setFinder($finder);

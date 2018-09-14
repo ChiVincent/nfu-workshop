@@ -1,11 +1,32 @@
 <?php
 
-namespace App;
+namespace NFUWorkshop;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/**
+ * NFUWorkshop\User
+ *
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property string $email
+ * @property string|null $email_verified_at
+ * @property int $id
+ * @property string $name
+ * @property string $password
+ * @property string|null $remember_token
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereEmailVerifiedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User wherePassword($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereRememberToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\NFUWorkshop\User whereUpdatedAt($value)
+ * @mixin \Eloquent
+ */
 class User extends Authenticatable
 {
     use Notifiable;
